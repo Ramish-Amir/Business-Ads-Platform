@@ -1,0 +1,12 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard {
+  width: 15%;
+  background: lightblue;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
