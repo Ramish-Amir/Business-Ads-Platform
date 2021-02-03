@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: '', component: DashboardComponent, children: [
       {
-        path: '', component: SpotlightManagerComponent
+        path: 'spotlight-manager', component: SpotlightManagerComponent
       },
       {
         path: 'spotlight-creator', component: SpotlightCreatorComponent

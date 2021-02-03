@@ -1,10 +1,14 @@
 <div class="dashboard-container">
   <div class="dashboard">
-    <p>dashboard works!</p>
+    <h2>Dashboard</h2>
+    <div class="dashboard-items-container">
+      <div routerLink="spotlight-manager" routerLinkActive="active-tab" class="dashboard-item">Spotlight Manager</div>
+      <div routerLink="spotlight-creator" routerLinkActive="active-tab" class="dashboard-item">Spotlight Creator</div>
+      <div routerLink="assets" routerLinkActive="active-tab" class="dashboard-item">Assets Library</div>
+    </div>
   </div>
-  <div>
+
+  <div class="dynamic-container">
     <router-outlet></router-outlet>
   </div>
 </div>
-
-<!--<h1>This is the text in Dashboard component</h1>-->
