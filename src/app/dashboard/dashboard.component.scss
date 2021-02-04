@@ -1,10 +1,7 @@
 .dashboard-container {
   display: flex;
   flex-direction: row;
-}
-
-* {
-  box-sizing: border-box;
+  position: relative;
 }
 
 .dashboard {
@@ -12,13 +9,18 @@
   flex-direction: column;
   align-items: center;
   color: white;
+  min-width: 15%;
+  max-width: 15%;
   width: 15%;
   background: linear-gradient(to bottom, #3f4c6b, #606c88);
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   padding: 20px 15px;
   box-sizing: border-box;
+  animation: slideInRight 1s ease-in-out;
 }
 
 .dashboard-item {
@@ -42,4 +44,15 @@
   margin: 10px;
   border: 1px solid gray;
   width: 85%;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
 }
