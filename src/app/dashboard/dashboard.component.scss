@@ -12,7 +12,8 @@
   min-width: 15%;
   max-width: 15%;
   width: 15%;
-  background: linear-gradient(to bottom, #3f4c6b, #606c88);
+  //background: linear-gradient(to bottom, #3f4c6b, #606c88cc);
+  background: #3f4c6b;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -21,6 +22,8 @@
   padding: 20px 15px;
   box-sizing: border-box;
   animation: slideInRight 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -webkit-animation: slideInRight 1s ease-in-out;
 }
 
 .dashboard-item {
@@ -46,13 +49,3 @@
   width: 85%;
 }
 
-@keyframes slideInRight {
-  from {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-  }
-}

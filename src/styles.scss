@@ -7,3 +7,15 @@ body {
 * {
   box-sizing: border-box;
 }
+
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    transform: none;
+    -webkit-transform: none;
+  }
+}
